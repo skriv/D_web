@@ -1,0 +1,16 @@
+{
+  "name": "D_Web",
+  "version": "0.0.1",
+  "description": "_",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.15.0"
+  }
+}

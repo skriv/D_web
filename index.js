@@ -1,7 +1,9 @@
-var http = require("http");
+const PORT = 8888;
+var express = require('express')
+var app = express()
 
-http.createServer(function(request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("Hello World");
-  response.end();
-}).listen(80);
+app.use(express.static(__dirname + '/public'));
+
+app.listen(PORT, function () {
+  console.log(`Example app listening on port ${PORT}`)
+})
